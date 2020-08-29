@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    android:padding="30dp"
+    tools:context=".CreateNewUser">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_man"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/katawan_border_blue"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="20dp"
+                android:src="@drawable/man" />
+
+            <ImageView
+                android:id="@+id/check1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="75dp"
+                android:padding="18dp"
+                android:src="@drawable/check" />
+
+            <ImageView
+                android:id="@+id/image_woman"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/image_man"
+                android:background="@drawable/katawan_border_pink"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="20dp"
+                android:src="@drawable/woman" />
+
+            <ImageView
+                android:id="@+id/check2"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="75dp"
+                android:layout_toRightOf="@id/image_man"
+                android:padding="18dp"
+                android:src="@drawable/check" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_pangalan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/r1"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="20dp"
+            android:text="Pangalan"
+            android:textColor="@color/orange"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_pangalan"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_rectangle_white"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/okay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:background="@color/green"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="OK"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>
